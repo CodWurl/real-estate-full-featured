@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { HomeSearch } from "../components/real-estate/HomeSearch";
 
+
+
 export default function Homes() {
   const [searchParams] = useSearchParams();
   const [initialQuery, setInitialQuery] = useState("");
@@ -18,4 +20,6 @@ export default function Homes() {
       <HomeSearch initialQuery={initialQuery} />
     </div>
   );
-}
+};
+
+
